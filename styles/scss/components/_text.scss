@@ -1,0 +1,16 @@
+.heading {
+    font-size:2em;
+    font-weight: 900;   
+}
+
+.content {
+    padding-top:40px;
+    padding-left:40px;
+    .heading {
+        margin-bottom:5px;
+    }
+    .text {
+        max-width: 1000px;
+        font-size: 1.2em;
+    }
+}

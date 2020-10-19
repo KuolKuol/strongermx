@@ -1,0 +1,62 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:#1e1e1c;
+    color:rgba(30, 30, 28,0.8);
+
+    .heading {
+        margin-bottom: 0.1em;
+    }
+    .text {
+        margin-bottom:0.8em;
+    }
+
+    @include media($small){
+        min-height: 180px;
+    }
+}
+
+.cta--shop {
+    min-height: 200px;
+    background-image: linear-gradient(rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.8)), url('../../../image/steel.jpg');
+    color:#1e1e1c;
+}
+
+.cta--buy {
+    min-height: 140px;
+    color:black;
+    background-color: black;
+    color:white;
+}
+
+.cta--info {
+    min-height: 220px;
+    color:black;
+    background-color: white;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-image: linear-gradient(rgba(255, 255, 255,0.8),rgba(255, 255, 255,0.8)), url('../../../image/steel.jpg');
+
+    .heading {
+        // font-size: 1.4em;
+        margin-bottom: 5px;
+    }
+    .text {
+        font-size: 1.1em;
+        max-width: 800px;
+    }
+    @include media($middle){
+        padding-left:40px;
+    }
+    @include media($small){
+        padding:10px;
+    }
+}

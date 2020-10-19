@@ -1,0 +1,23 @@
+.banner {
+    background-image: linear-gradient(rgba(250,250,250,0.5),rgba(250,250,250,0.9)),url('../../../image/rock.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../../../image/rock.jpg");
+    background-size: cover;
+    padding-top:70px;
+    height: calc(140px + 70px);
+    display: flex;
+    align-items: center;
+    color:white;
+    .heading {
+    }
+    .text {
+   
+    }
+
+    @include media($small){
+        justify-content: center;
+        text-align: center;
+    }
+    @include media($middle){
+        padding-left:40px;
+    }
+}

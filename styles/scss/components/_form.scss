@@ -1,0 +1,49 @@
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    .form-section {
+        input {
+            width:500px;
+            height: 50px;
+        }
+        label {
+            display: block;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            color: black;
+        }
+        .textarea {
+            height: 500px;
+        }
+    }
+
+    @include media($small){
+        margin:20px 10px;
+        .form-section {
+            input,textarea {
+                width:450px;
+            }
+        }
+    }
+    
+    @include media($middle){
+        margin:20px 40px;
+        .form-section {
+            input,textarea {
+                width:600px;
+
+            }
+        }
+    }
+}
+
+.button-bg {
+    background-color: #fff;
+    border:1px solid grey;
+}
+
+.textarea {
+    padding:20px;
+}

@@ -1,0 +1,150 @@
+.carousel-group {
+    padding-top:40px;
+    .carousel {
+        position: relative;
+        padding-bottom:40px;
+        .container{
+            .carousel__content {
+                min-height:100px;
+                // background-color: green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom:40px;
+                .heading {
+
+                }
+                .text {
+                    text-decoration: none;
+                    color:grey;
+                    font-size: 1.3em;
+                    text-transform: uppercase;
+                    padding-top:10px;
+                    font-weight: bold;
+                }
+            }
+        } 
+        @include media($small){
+            padding:0 20px;
+            padding-top:40px;
+
+            .container {
+                margin:0;
+                max-width:100%;
+                width:100%;
+            }
+        }
+        @include media($middle){
+            
+        }
+    }
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-carousel {
+    position: relative;
+    .owl-nav {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        top:120px;
+        font-size: 2em;
+        @include media($small){
+            display: none;
+        }
+    }
+}
+
+.owl-next,.owl-prev {
+    position: relative;
+    &:hover {
+        background-color: none;
+    }
+}
+
+.owl-next {
+    left:30px;
+}
+
+.owl-prev {
+    right:30px;
+}
+
+.owl-carousel .div{
+    /* height: 200px; */
+    background-color: whitesmoke;
+    height: 200px;
+}
+
+
+.carousel--social {
+    margin:0;
+    padding:0;
+    .owl-nav {
+        display: none;
+    }
+    .owl-carousel {
+        .div {
+            background-color: #fff;
+            opacity: 0.8;
+            transition: all 1s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.div {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:20px 0;
+}
+
+.one {
+    background-image: url('../../../image/brakepad.png');
+    
+}
+
+.two {
+    background-image: url('../../../image/brakepad3.png');
+}
+
+.three {
+    background-image: url('../../../image/brakepadtwo.png');
+}
+
+.four {
+    background-image: url('../../../image/grip.png');
+}
+
+.five {
+    background-image: url('../../../image/tiedown.jfif');
+}
+
+.six {
+    background-image: url('../../../image/brakepadtwo.png');
+}
+.seven {
+    background-image: url('../../../image/grip.png');
+}
+
+.carousel__content {
+    min-height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:40px;
+    .heading {
+
+    }
+
+}

@@ -1,0 +1,39 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 200px;
+    background: #1e1e1c;
+    .box {
+        min-width: 400px;
+        flex-direction: column;
+        height: 140px;
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        text-decoration: none;
+        .heading {
+            text-decoration: none;
+        }
+    }
+    @include media($small){
+        width: 100%;
+
+        .box {
+            width: 100%;
+
+            &:first-child {
+                border-bottom:1px solid white;
+            }
+        }
+    }
+    @include media($middle){
+        .box {
+            &:first-child {
+                border-right:1px solid white;
+            }
+        }
+    }
+}

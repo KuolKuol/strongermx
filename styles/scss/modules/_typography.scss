@@ -1,0 +1,33 @@
+// GENERATE FONTFACE CSS TEMPLATE
+@mixin font($name, $url) {
+	@font-face {
+		font-family: '#{$name}';
+        src: url('#{$url}') format("truetype");
+        // font-weight: $weight;
+        // font-style: $style;
+        // users see a fallback font if custom font takes longer than 100ms to load
+        font-display: swap;
+    }
+}
+@include font("ethnoit","../../fonts/ethnocentric/ethnocentricrgit.ttf");
+@include font("ethno","../../fonts/ethnocentric/ethnocentricrg.ttf");
+
+// html {
+//     background-image: url("../../../fonts/ethnocentric/ethnocentric\ rg.ttf");
+//     background-image: url("../../../fonts/ethnocentric/ethnocentric\ rg\ it.ttf");
+// }
+
+// // EXMAPLE FONT 
+// @include font("ibm","../../../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf");
+// @include font("ibm","../../../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf",'normal','normal');
+// @include font("ibm","../../../fonts/IBM_Plex_Mono/IBMPlexMono-BoldItalic.ttf",'bold','italic');
+// @mixin font($name, $url, $weight, $style) {
+// 	@font-face {
+// 		font-family: '#{$name}';
+//         src: url('#{$url}');
+//         font-weight: $weight;
+//         font-style: $style;
+//         // users see a fallback font if custom font takes longer than 100ms to load
+//         font-display: optional;
+//     }
+// }

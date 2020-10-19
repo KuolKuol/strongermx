@@ -1,0 +1,79 @@
+.counter {
+    background-color: #1e1e1c;
+    color:white;
+    min-height: 250px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    .counter__content {
+        height: 180px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .number {
+            font-size: 3em;
+            margin-bottom:10px;
+        }
+        .text {
+            font-size: 1.1em;
+            max-width: 400px;
+        }
+    }
+
+    @include media($small) {
+        .counter__content {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+.counter--numbers {
+    .counter__content{
+        min-width: 500px;
+    }
+
+    @include media($small){
+        width: 100%;
+        &:nth-child(-n + 2){
+            border-bottom: 1px solid white;
+        }
+    }
+
+    @include media($middle){
+        .counter__content {
+            width:33%;
+            &:nth-child(-n + 2){
+                border-right: 1px solid white;
+            }
+        }
+    }
+}
+
+
+.counter--social {
+    .counter__content{
+        min-width: 600px;
+        color:white;
+text-decoration: none;
+    }
+
+    @include media($small){
+        width: 100%;
+        &:first-child{
+            border-bottom: 1px solid white;
+        }
+    }
+
+    @include media($middle){
+        .counter__content {
+            width:50%;
+            &:first-child{
+                border-right: 1px solid white;
+            }
+        }
+    }
+}

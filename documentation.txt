@@ -1,0 +1,10 @@
+font face
+https://alligator.io/css/font-face/
+fallback font finder
+https://meowni.ca/font-style-matcher/
+
+https://www.smashingmagazine.com/2018/12/generic-css-mobile-first/
+https://medium.com/@elad/the-new-responsive-design-evolution-2bfb9b504a4e
+
+
+https://www.smashingmagazine.com/2019/01/mobile-first-marketing-tips/

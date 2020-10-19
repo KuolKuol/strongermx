@@ -1,0 +1,31 @@
+.hero {
+    min-height:calc(100vh);
+    width:100%;
+    background:white;
+    background-image: linear-gradient(rgba(250,250,250,0.9),rgba(250,250,250,0.9)),url('../../../image/motorbike.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .hero__content {
+        .heading {
+            margin-bottom:0.4em;
+        }
+        .text {
+            margin-bottom:1em;
+            max-width: 500px;
+        }
+    }
+
+    @include media($small){
+        padding: 40px;
+    }
+    @include media($middle){
+        padding:70px;
+    }
+}
